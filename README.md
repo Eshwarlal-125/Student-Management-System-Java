@@ -1,16 +1,34 @@
 # 🎓 Student Management System
 
-A desktop-based Student Management System developed using **Java Swing**, **JDBC**, and **MySQL**. The application helps educational institutions manage student records, attendance, fees, and reports through an easy-to-use graphical interface.
+A desktop-based **Student Management System** developed using **Java Swing**, **JDBC**, and **MySQL**. The application provides **role-based authentication** for **Admin**, **Teacher**, and **Student** users, enabling efficient management of student records, attendance, fees, and reports through an intuitive graphical user interface.
 
 ---
 
 ## ✨ Features
 
-- 🔐 Role-Based Login (Admin & Student)
-- 👨‍🎓 Student Management (Add, Update, Delete, Search)
+### 🔐 Authentication
+- Secure Role-Based Authentication (Admin, Teacher & Student)
+
+### 🛡️ Admin Dashboard
+- Manage Student Records
+- Manage Fee Records
+- Generate Reports
+
+### 👨‍🏫 Teacher Dashboard
+- View Student Records
+- Mark Student Attendance
+- View Attendance Reports
+
+### 👨‍🎓 Student Dashboard
+- View Personal Information
+- View Attendance Record
+- View Fee Details
+
+### 📚 Core Features
+- 📝 Student Management (Create, Read, Update, Delete & Search)
 - 📅 Attendance Management
 - 💰 Fee Management
-- 📊 Reports
+- 📊 Report Generation
 - 🌙 Dark Mode
 - 🗄️ MySQL Database Integration
 
@@ -20,17 +38,24 @@ A desktop-based Student Management System developed using **Java Swing**, **JDBC
 
 - Java
 - Java Swing
-- JDBC
+- JDBC (Java Database Connectivity)
 - MySQL
 - Object-Oriented Programming (OOP)
-- Git & GitHub
+- Git
+- GitHub
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 Student_System_project/
+│
+├── screenshots/
+│   ├── login.png
+│   ├── admin-dashboard.png
+│   ├── teacher-dashboard.png
+│   └── student-dashboard.png
 │
 ├── src/
 │   ├── Main.java
@@ -39,36 +64,82 @@ Student_System_project/
 │   └── META-INF/
 │
 ├── mysql-connector-java-8.0.28.jar
+├── .gitignore
 └── README.md
 ```
 
 ---
 
+## 📋 Requirements
+
+- Java JDK 21 (or later)
+- MySQL Server 8.0+
+- VS Code or IntelliJ IDEA
+- MySQL Connector/J 8.0.28
+
+---
+
 ## ⚙️ Installation
 
-1. Clone the repository.
-2. Open the project in VS Code or IntelliJ IDEA.
-3. Import the `student_management1.sql` database into MySQL.
-4. Add the MySQL Connector JAR if needed.
-5. Update the database username and password in the Java source code.
-6. Run `Main.java`.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Eshwarlal-125/Student-Management-System-Java.git
+```
+
+### 2. Open the project
+
+Open the project in **VS Code** or **IntelliJ IDEA**.
+
+### 3. Import the database
+
+Import the **student_management1.sql** file into your MySQL Server.
+
+### 4. Configure the database
+
+Update the MySQL username and password inside `StudentManagementSystem.java` if required.
+
+### 5. Add MySQL Connector
+
+Ensure that `mysql-connector-java-8.0.28.jar` is added to the project's classpath.
+
+### 6. Run the application
+
+Run the **StudentManagementSystem.java** file to launch the application.
 
 ---
 
 ## 📸 Screenshots
 
-> Screenshots will be added soon.
+### 🔐 Login Screen
+![Login Screen](screenshots/login.png)
+
+### 🛡️ Admin Dashboard
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### 👨‍🏫 Teacher Dashboard
+![Teacher Dashboard](screenshots/teacher-dashboard.png)
+
+### 👨‍🎓 Student Dashboard
+![Student Dashboard](screenshots/student-dashboard.png)
 
 ---
 
 ## 🚀 Future Improvements
 
-- Export reports to PDF
-- Export reports to Excel
-- Email notifications
-- Modern UI design
-- Dashboard analytics
-- Online version using Spring Boot + React
+- Export Reports to PDF
+- Export Reports to Excel
+- Email Notifications
+- Improved User Interface (UI)
+- Dashboard Analytics
+- User Profile Management
+- Web-Based Version using Spring Boot & React
+
+---
+
+## 📄 License
+
+This project is intended for educational and learning purposes.
 
 ---
 
@@ -76,8 +147,16 @@ Student_System_project/
 
 **Eshwar Lal**
 
-GitHub: https://github.com/Eshwarlal-125
+GitHub: [Eshwar Lal](https://github.com/Eshwarlal-125)
 
 ---
 
-⭐ If you like this project, don't forget to star the repository!
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a **⭐ Star** on GitHub.
+
+It motivates me to build and share more open-source projects.
+
+---
+
+**Thank you for visiting this repository! 😊**
